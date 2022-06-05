@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        " header header" 
+        " main  main"
+        "footer footer ";
+    grid-template-rows: 100px 1fr 80px;
+    background-color: black;
+}
+
+header{
+    grid-area: header;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    grid-area: main;
+    color: white;
+}
+
+h1{
+    margin: 2%;
+}
+
+footer{
+    grid-area: footer;
+    background-color:  red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
