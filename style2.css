@@ -6,7 +6,7 @@ body{
         " header header" 
         " main  main"
         "footer footer ";
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 100px 1fr 70px;
     background-color: black;
 }
 
@@ -14,21 +14,16 @@ header{
     grid-area: header;
     background-color: red;
     color: white;
-    display: flex;
-    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
 }
 
 main{
     grid-area: main;
     color: white;
-    position: absolute;
-	left: 36%;
-	top: 36%;
     font-size: 25px;
-}
-
-h1{
-    margin: 2%;
 }
 
 footer{
@@ -39,3 +34,8 @@ footer{
     color: white;
 }
 
+.bloco{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
